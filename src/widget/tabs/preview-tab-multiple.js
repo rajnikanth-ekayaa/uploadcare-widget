@@ -112,6 +112,20 @@ class PreviewTabMultiple extends BasePreviewTab {
           .replace('%file%', filename)
       )
     fileEl
+      .find('.uploadcare--file__edit')
+      .attr(
+        'title',
+        locale
+          .t('dialog.tabs.preview.multiple.file.edit')
+          .replace('%file%', filename)
+      )
+      .attr(
+          'aria-label',
+          locale
+              .t('dialog.tabs.preview.multiple.file.edit')
+              .replace('%file%', filename)
+      )
+    fileEl
       .find('.uploadcare--file__remove')
       .attr(
         'title',
@@ -164,7 +178,7 @@ class PreviewTabMultiple extends BasePreviewTab {
         .attr('class', 'uploadcare--icon uploadcare--file__icon')
     }
     fileEl.find('.uploadcare--file__preview').html(filePreview)
-    return fileEl.find('.uploadcare--file__description').on('click', () => {
+    return fileEl.find('.uploadcare--file__description, .uploadcare--file__edit').on('click', () => {
       return openPreviewDialog(file, this.settings).done(newFile => {
         return this.dialogApi.fileColl.replace(file, newFile)
       })

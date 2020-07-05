@@ -22,6 +22,15 @@ const tabPreviewMultipleFile = () => html`
 
     <button
       type="button"
+      class="uploadcare--button uploadcare--button_icon uploadcare--button_muted uploadcare--file__edit"
+    >
+      <svg role="presentation" width="24" height="24" class="uploadcare--iconExt">
+        <use xlink:href="#uploadcare--icon-edit"></use>
+      </svg>
+    </button>
+
+    <button
+      type="button"
       class="uploadcare--button uploadcare--button_icon uploadcare--button_muted uploadcare--file__remove"
     >
       <svg role="presentation" width="32" height="32" class="uploadcare--icon">
