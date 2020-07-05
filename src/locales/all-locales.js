@@ -28,6 +28,7 @@ import uk from './uk'
 import vi from './vi'
 import zhTW from './zh-TW'
 import zh from './zh'
+import hi from './hi'
 
 export default {
   ar,
@@ -59,5 +60,6 @@ export default {
   uk,
   vi,
   zhTW,
-  zh
+  zh,
+  hi
 }
