@@ -79,6 +79,7 @@ const closeDialog = function() {
 const openDialog = function(files, tab, settings) {
   var cancelLock, dialog, dialogPr
   closeDialog()
+  locale.checkLocale(settings)
   originalFocusedElement = document.activeElement
   dialog = $(tpl('dialog')).appendTo('body')
   dialogPr = openPanel(
@@ -174,7 +175,7 @@ const openPanel = function(placeholder, files, tab, settings, opt = { inModal: f
   }
 
   settings = build(settings)
-
+  locale.checkLocale(settings);
   panel = new Panel(settings, placeholder, files, tab, opt).publicPromise()
 
   filter = function(files) {
@@ -614,6 +615,7 @@ class Panel {
       .append(tabIcon)
       .appendTo(this.panel.find('.uploadcare--menu__items'))
   }
+
 }
 
 export {

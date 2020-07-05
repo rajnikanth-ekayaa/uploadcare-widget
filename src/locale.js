@@ -39,12 +39,25 @@ const locale = {
           ((ref = value[locale.pluralize(n)]) != null
             ? ref.replace('%1', n)
             : undefined) || n
-      } else {
+      } else {  
         value = ''
       }
     }
     return value || ''
+  },
+
+  checkLocale: function(settings){
+    if(settings){
+      if(currentLocale){
+        if(currentLocale.lang !== settings.locale){
+          this.rebuild(settings);
+        }
+      } else {
+        _build(settings);
+      }
+    }
   }
+  
 }
 
 const defaultLang = 'en'
