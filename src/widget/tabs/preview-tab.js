@@ -305,7 +305,12 @@ class PreviewTab extends BasePreviewTab {
       prefered = crop.preferedSize
       if (prefered) {
         gcd = calcGCD(prefered[0], prefered[1])
-        caption = `${prefered[0] / gcd}:${prefered[1] / gcd}`
+        if(i === 0){
+          caption = `${prefered[0] / gcd}:${prefered[1] / gcd} (Recommended)`
+        } else {
+          caption = `${prefered[0] / gcd}:${prefered[1] / gcd}`
+        }
+        
       } else {
         caption = locale.t('dialog.tabs.preview.crop.free')
       }
@@ -326,7 +331,7 @@ class PreviewTab extends BasePreviewTab {
             control.find('>*').removeClass(currentClass)
             item.addClass(currentClass)
           }
-        })
+        });
       if (prefered) {
         size = fitSize(prefered, [30, 30], true)
         return item.children().css({
@@ -344,6 +349,7 @@ class PreviewTab extends BasePreviewTab {
           .append(icon)
           .addClass('uploadcare--crop-sizes__icon_free')
       }
+
     })
     template.remove()
 

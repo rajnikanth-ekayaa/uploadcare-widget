@@ -34,7 +34,7 @@ const tabPreviewImage = ({ src, name = '', crop }) => html`
               <div
                 role="button"
                 tabindex="0"
-                class="uploadcare--button uploadcare--button_icon uploadcare--crop-sizes__item"
+                class="uploadcare--button uploadcare--crop-sizes__item"
                 data-caption="free"
               >
                 <div class="uploadcare--crop-sizes__icon"></div>
