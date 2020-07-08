@@ -113,7 +113,8 @@ const translations = {
         crop: {
           title: 'काट-छांट करें और इस चित्र को जोड़ने',
           done: 'होगया',
-          free: 'नि: शुल्क'
+          free: 'नि: शुल्क',
+          recommended: 'संस्तुत'
         },
         video: {
           title: 'इस वीडियो को जोड़ें?',

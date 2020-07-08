@@ -113,7 +113,8 @@ const translations = {
         crop: {
           title: 'Crop and add this image',
           done: 'Done',
-          free: 'free'
+          free: 'free',
+          recommended: 'recommended'
         },
         video: {
           title: 'Add this video?',

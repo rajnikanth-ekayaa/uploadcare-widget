@@ -306,7 +306,7 @@ class PreviewTab extends BasePreviewTab {
       if (prefered) {
         gcd = calcGCD(prefered[0], prefered[1])
         if(i === 0){
-          caption = `${prefered[0] / gcd}:${prefered[1] / gcd} (Recommended)`
+          caption = `${prefered[0] / gcd}:${prefered[1] / gcd} (${locale.t('dialog.tabs.preview.crop.recommended')})`
         } else {
           caption = `${prefered[0] / gcd}:${prefered[1] / gcd}`
         }
