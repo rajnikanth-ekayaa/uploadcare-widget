@@ -344,10 +344,16 @@ class Panel {
       return
     }
     ref = this.settings.crop
-    for (i = 0, len = ref.length; i < len; i++) {
+    /*for (i = 0, len = ref.length; i < len; i++) {
       crop = ref[i]
       // if even one of crop option sets allow free crop,
       // we don't need to crop automatically
+      if (!crop.preferedSize) {
+        return
+      }
+    }*/
+    if(ref && ref[0]){
+      crop = ref[0];
       if (!crop.preferedSize) {
         return
       }
