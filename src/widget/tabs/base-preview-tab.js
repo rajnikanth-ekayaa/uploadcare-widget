@@ -25,6 +25,11 @@ class BasePreviewTab {
       '.uploadcare--preview__done' + notDisabled,
       this.dialogApi.resolve
     )
+    this.container.on(
+      'click',
+      '.uploadcare--preview__add' + notDisabled,
+      this.dialogApi.switchTab.bind(null, 'file')
+    )
   }
 
   __initTabButtonCircle() {

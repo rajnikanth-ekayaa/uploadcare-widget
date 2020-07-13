@@ -26,13 +26,23 @@ const tabPreviewMultiple = () => html`
       ${locale.t('dialog.tabs.preview.multiple.clear')}
     </button>
 
-    <button
-      type="button"
-      class="uploadcare--button uploadcare--button_primary uploadcare--footer__button uploadcare--preview__done"
-      aria-describedby="preview_title"
-    >
-      ${locale.t('dialog.tabs.preview.multiple.done')}
-    </button>
+    <div class="uploadcare--footer__button">
+      <button
+        type="button"
+        class="uploadcare--button uploadcare--button_primary uploadcare--footer__button uploadcare--preview__add"
+        aria-describedby="preview_title"
+      >
+        ${locale.t('dialog.tabs.preview.multiple.add')}
+      </button>
+
+      <button
+        type="button"
+        class="uploadcare--button uploadcare--button_primary uploadcare--footer__button uploadcare--preview__done"
+        aria-describedby="preview_title"
+      >
+        ${locale.t('dialog.tabs.preview.multiple.done')}
+      </button>
+    </div>
   </div>
 `
 

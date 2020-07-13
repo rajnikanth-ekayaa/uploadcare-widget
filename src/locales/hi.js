@@ -147,6 +147,7 @@ const translations = {
           tooFewFiles: 'आपने चुना है %files%। कम से कम %min% की आवश्यकता है।',
           clear: 'सभी हटाएं',
           done: 'जोड़ें',
+          add: 'अधिक जोड़ें',
           file: {
             preview: 'पूर्वावलोकन %file%',
             remove: 'हटा दो %file%',

@@ -146,7 +146,8 @@ const translations = {
           tooManyFiles: 'You’ve chosen too many files. %max% is maximum.',
           tooFewFiles: 'You’ve chosen %files%. At least %min% required.',
           clear: 'Remove all',
-          done: 'Add',
+          add: 'Add More',
+          done: 'Done',
           file: {
             preview: 'Preview %file%',
             remove: 'Remove %file%'
